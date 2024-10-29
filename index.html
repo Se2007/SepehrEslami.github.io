@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Visit Page</title>
+    <script>
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Cookie expiry
+            const expires = "; expires=" + date.toUTCString();
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Function to get a cookie value
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Check if the user has visited before
+        function checkVisit() {
+            const visit = getCookie("visited");
+            if (visit) {
+                alert("You have already visited this page.");
+                document.body.innerHTML = "<h1>Sorry, you can only visit this page once per device.</h1>";
+            } else {
+                setCookie("visited", "true", 365); // Set a cookie for 1 year
+            }
+        }
+
+        window.onload = checkVisit;
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Single Visit Page</h1>
+    <p>You are visiting this page for the first time.</p>
+</body>
+</html>
