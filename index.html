@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه بازدید یک‌باره</title>
-    <script>
-        function checkVisit() {
-            if (localStorage.getItem('visited')) {
-                alert("شما قبلاً از این صفحه بازدید کرده‌اید.");
-                document.body.innerHTML = "<h1>متأسفانه شما فقط یک بار می‌توانید از این صفحه بازدید کنید.</h1>";
-            } else {
-                localStorage.setItem('visited', 'true');
-            }
-        }
-
-        window.onload = checkVisit;
-    </script>
-    <style>
-        body {
-            direction: rtl;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>نامه من</title>
 </head>
 <body>
-    <h1>به صفحه بازدید یک‌باره خوش آمدید</h1>
-    <p>شما برای اولین بار از این صفحه بازدید می‌کنید.</p>
+    <header class="header">
+        <img src="000-removebg-preview.png" alt="Image" class="header-image">
+    </header>
+
+    <div class="container">
+        <section class="letter">
+            <span class="letter-title">بسمه تعالی</span>
+                <p class="letter-body">گاهی دوست داشتن را باید کشف کرد، باید درک کرد، باید فهمید. دوست داشتن دل می‌خواهد، نه دلیل. من هم دلیلی برای این پیدا نکردم که چرا هنوز گاهی به یاد تو می‌افتم. بین خودمان باشد، هنوز یواشکی دوستت دارم. هنوز دلیلی برای این حس پیدا نکردم.</p>
+            <div class="poems">
+                <span class="poem">غلام چشم آن ترکم که در خواب خوش مستی</span>
+                <span class="poem">نگارین گلشنش روی است و مشکین سایبان ابرو</span>
+            </div>
+            <div class="poet-container">
+                <p class="poet">حافظ</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="downbar">
+        <p>این یک پیام از قلب است.</p>
+    </footer>
 </body>
 </html>
+
+

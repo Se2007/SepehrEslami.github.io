@@ -1,0 +1,150 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b3b4b3;
+    color: #333;
+    direction: rtl; /* Right-to-left layout for Persian */
+    text-align: center; /* Center content */
+}
+
+/* Header styling */
+.header {
+    background-color: #5b5e61;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Ensures centering for the image */
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Header image styling */
+.header-image {
+    max-width: 100px; /* Adjust the image size */
+    height: auto;
+}
+
+/* Container for the main content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #878888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Letter section styling */
+.letter {
+    text-align: right;
+}
+
+/* Title of the letter */
+.letter-title {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #5b5e61;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Body of the letter */
+.letter-body {
+    color: #000000;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Poem styling */
+.poems {
+    display: flex;
+    justify-content: center;
+}
+
+.poem {
+    font-style: italic;
+    color: #333;
+    margin: 0 15px; /* 20px total space between the poems */
+    font-size: 13px;
+}
+
+/* Poet name styling */
+.poet {
+    color: #333;
+    font-size: 15px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+.poet-container {
+    position: relative;
+    z-index: 1;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+
+
+
+/* Footer or downbar styling */
+.downbar {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.downbar::after {
+    content: "01101001001000000110110001101111011101100110010100100000011110010110111101110101";
+    position: absolute;
+    top: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    font-size: 10px;
+    color: #ffffff;
+    z-index: -1;
+    line-height: 1.5;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal; /* Allow text to wrap normally */
+}
+
+.downbar::before {
+    content: "01101110 01101111 01110111 01101111 01110010 01100101 01101101 01100101 01110011"; /* Second line */
+    position: absolute;
+    top: 50px; /* Adjust to control spacing between lines */
+    left: 0;
+    right: 0;
+    opacity: 0.2;
+    font-size: 10px;
+    color: #ffffff;
+    z-index: -1;
+    line-height: 1.5;
+    text-align: center;
+    overflow: hidden;
+    white-space: normal; /* Allow text to wrap normally */
+}
+
+
+
+
