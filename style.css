@@ -155,3 +155,15 @@ body {
     max-width: 130px; /* Adjust the image size */
     height: auto;
 }
+
+.rose-image {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    background-color: #b3b4b3;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px;
+    margin-top: 40px;*/
+    position: relative; 
+    z-index: 1;
+}
