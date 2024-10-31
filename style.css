@@ -146,5 +146,12 @@ body {
 }
 
 
+/* .rose{
+    padding-top: 0px;
+} */
 
-
+.rose {
+    padding-top: 40px;
+    max-width: 130px; /* Adjust the image size */
+    height: auto;
+}
